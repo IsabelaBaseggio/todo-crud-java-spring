@@ -35,9 +35,7 @@ public class TaskService {
                 if (updatedTask.isCompleted() || !updatedTask.isCompleted()) {
                     task.setCompleted(updatedTask.isCompleted());
                     return true;
-                    // body("Task atualizada com sucesso!")
                 } else {
-                    //  Não está imprimindo essa mensagem -> mas ele retorna um bad Request quando o valor não é true ou false
                     return false;
                 }
             }
