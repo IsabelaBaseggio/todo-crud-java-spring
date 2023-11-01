@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.principal.todoservice.service.TaskServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-10-31T13:14:24" hostname="LAPTOP-6P7GD5B0" time="0.064">
+  <properties/>
+  <testcase name="testEditTask()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.023"/>
+  <testcase name="testEditTask_FieldsNotNull()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.002"/>
+  <testcase name="testAddTask()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.004"/>
+  <testcase name="testGetAllTasks()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.002"/>
+  <testcase name="testDeleteTask_TaskDoesNotExist()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.004"/>
+  <testcase name="testEditTask_TaskNotFound()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.002"/>
+  <testcase name="testDeleteTask_ListIsEmpty()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.003"/>
+  <testcase name="testDeleteTask_TaskExists()" classname="com.principal.todoservice.service.TaskServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

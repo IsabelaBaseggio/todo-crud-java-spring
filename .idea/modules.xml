@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/to-do-service.iml" filepath="$PROJECT_DIR$/to-do-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/to-do-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/to-do-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/to-do-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/to-do-service.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/todo-spring.iml" filepath="$PROJECT_DIR$/.idea/todo-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/todo-crud-java-spring.iml" filepath="$PROJECT_DIR$/.idea/todo-crud-java-spring.iml" />
     </modules>
   </component>
 </project>
