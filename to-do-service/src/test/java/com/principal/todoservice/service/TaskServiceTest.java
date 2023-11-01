@@ -37,8 +37,8 @@ public class TaskServiceTest {
         Task task = new Task(new RequestTask("Tarefa Antiga", "2023-11-04"));
         taskService.addTask(task);
 
-        RequestUpdatedTask updatedTask = new RequestUpdatedTask("Tarefa Atualizada", "2023-11-05", true);
-        boolean isEdited = taskService.editTask(1, updatedTask);
+        RequestUpdatedTask updatedTask = new RequestUpdatedTask("Tarefa Atualizada", "2023-11-05", "true");
+        boolean isEdited = taskService.editTask(task.getId(), updatedTask);
 
         assertTrue(isEdited);
     }
@@ -46,25 +46,24 @@ public class TaskServiceTest {
     @Test
     public void testEditTask_TaskNotFound() {
         TaskService taskService = new TaskService();
-        RequestUpdatedTask updatedTask = new RequestUpdatedTask("Tarefa Atualizada", "2023-11-05", true);
+        RequestUpdatedTask updatedTask = new RequestUpdatedTask("Tarefa Atualizada", "2023-11-05", "true");
 
         boolean isEdited = taskService.editTask(1, updatedTask);
 
         assertFalse(isEdited);
     }
 
-    // TESTAR VALOR NÃO BOOLEAN
-//    @Test
-//    public void testEditTask_IsCompletedInvalid() {
-//        TaskService taskService = new TaskService();
-//        Task task = new Task(new RequestTask("Tarefa Antiga", "2023-11-04"));
-//        taskService.addTask(task);
-//
-//        RequestUpdatedTask updatedTask = new RequestUpdatedTask("Tarefa Atualizada", "2023-11-05", "invalid");
-//        boolean isEdited = taskService.editTask(task.getId(), updatedTask);
-//
-//        assertFalse(isEdited);
-//    }
+    @Test
+    public void testEditTask_IsCompletedInvalid() {
+        TaskService taskService = new TaskService();
+        Task task = new Task(new RequestTask("Tarefa Antiga", "2023-11-04"));
+        taskService.addTask(task);
+
+        RequestUpdatedTask updatedTask = new RequestUpdatedTask("Tarefa Atualizada", "2023-11-05", "invalid");
+        boolean isEdited = taskService.editTask(task.getId(), updatedTask);
+
+        assertFalse(isEdited);
+    }
 
     @Test
     public void testEditTask_FieldsNotNull() {
@@ -72,10 +71,10 @@ public class TaskServiceTest {
         Task task = new Task(new RequestTask("Tarefa Antiga", "2023-11-04"));
         taskService.addTask(task);
 
-        RequestUpdatedTask updatedTask = new RequestUpdatedTask(null, "2023-11-05", true);
+        RequestUpdatedTask updatedTask = new RequestUpdatedTask(null, "2023-11-05", "true");
         boolean isEdited = taskService.editTask(task.getId(), updatedTask);
 
-        assertTrue(isEdited);
+        assertFalse(isEdited);
     }
 
     @Test

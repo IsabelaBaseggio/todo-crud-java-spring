@@ -4,7 +4,7 @@ import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record RequestUpdatedTask(@NotNull @NotBlank String description, @NotNull @NotBlank String dueDate, boolean isCompleted) {
+public record RequestUpdatedTask(@NotNull @NotBlank String description, @NotNull @NotBlank String dueDate, String isCompleted) {
     public String getDescription() {
         return description;
     }
@@ -13,7 +13,7 @@ public record RequestUpdatedTask(@NotNull @NotBlank String description, @NotNull
         return dueDate;
     }
 
-    public boolean isCompleted() {
+    public String isCompleted() {
         return isCompleted;
     }
 }

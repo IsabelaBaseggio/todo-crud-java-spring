@@ -28,12 +28,21 @@ public class TaskService {
             if (task.getId() == taskId) {
                 if (updatedTask.getDescription() != null) {
                     task.setDescription(updatedTask.getDescription());
+                } else {
+                    return false;
                 }
                 if (updatedTask.getDueDate() != null) {
                     task.setDueDate(updatedTask.getDueDate());
+                } else {
+                    return false;
                 }
-                if (updatedTask.isCompleted() || !updatedTask.isCompleted()) {
-                    task.setCompleted(updatedTask.isCompleted());
+                if (updatedTask.isCompleted() == null){
+                    return true;
+                } else if (updatedTask.isCompleted().equalsIgnoreCase("false")){
+                    task.setCompleted(false);
+                    return true;
+                } else if (updatedTask.isCompleted().equalsIgnoreCase("true")) {
+                    task.setCompleted(true);
                     return true;
                 } else {
                     return false;
