@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.principal.todoservice.services.TaskServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-11-02T06:39:15" hostname="DESKTOP-DFAJJ7K" time="0.243">
+  <properties/>
+  <testcase name="testEditTask_IsCompletedInvalid()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.049"/>
+  <testcase name="testEditTask()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.017"/>
+  <testcase name="testEditTask_FieldsNotNull()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.009"/>
+  <testcase name="testAddTask()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.027"/>
+  <testcase name="testGetAllTasks()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.012"/>
+  <testcase name="testDeleteTask_TaskDoesNotExist()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.01"/>
+  <testcase name="testEditTask_InvalidDueDate()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.016"/>
+  <testcase name="testEditTask_TaskNotFound()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.005"/>
+  <testcase name="testDeleteTask()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.003"/>
+  <testcase name="testDeleteTask_ListIsEmpty()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.005"/>
+  <testcase name="testAddTask_InvalidDueDate()" classname="com.principal.todoservice.services.TaskServiceTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
